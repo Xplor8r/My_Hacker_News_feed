@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/Xplor8r/My_Hacker_News_feed#readme",
   "dependencies": {
+    "@uirouter/angularjs": "^1.0.22",
     "angular": "^1.7.8",
+    "angular-sanitize": "^1.7.8",
     "express": "^4.16.4"
   }
 }
