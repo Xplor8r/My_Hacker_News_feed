@@ -1,0 +1,23 @@
+{
+  "name": "my_hacker_news_feed",
+  "version": "1.0.0",
+  "description": "Hacker News clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xplor8r/My_Hacker_News_feed.git"
+  },
+  "author": "Michael Pieschel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xplor8r/My_Hacker_News_feed/issues"
+  },
+  "homepage": "https://github.com/Xplor8r/My_Hacker_News_feed#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
