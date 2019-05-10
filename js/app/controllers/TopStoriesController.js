@@ -1,14 +1,12 @@
-let POSTS_PER_PAGE = 30;
-
 function TopStoriesController(posts) {
 	let ctrl = this;
 
 	ctrl.page = 0;
 	ctrl.totalPosts = posts.data.length;
-	ctrl.totalPages = Math.ceil(ctrl.totalPosts / POSTS_PER_PAGE);
+	ctrl.totalPages = Math.ceil(ctrl.totalPosts / 30);
 
 	ctrl.paginatePosts = function () {
-		ctrl.posts = posts.data.slice(ctrl.page * POSTS_PER_PAGE, (ctrl.page + 1) * POSTS_PER_PAGE);
+		ctrl.posts = posts.data.slice(ctrl.page * 30, (ctrl.page + 1) * 30);
 	};
 
 	ctrl.nextPage = function () {
