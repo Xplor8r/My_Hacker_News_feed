@@ -15,6 +15,16 @@ angular
 					}
 				}
 			})
+			.state('saved', {
+				url: '/saved',
+				templateUrl: 'views/saved-stories.html',
+				controller: 'SavedStoriesController as saved',
+				resolve: {
+					posts: function (PostsService) {
+						return PostsService.getSavedStories();
+					}
+				}
+			})
 			.state('post', {
 				url: '/post/:id',
 				templateUrl: 'views/post.html',
@@ -24,7 +34,7 @@ angular
 						return PostsService.getPost($stateParams.id);
 					}
 				}
-			});
+			})
 		
 		$urlRouterProvider.otherwise('/top');
 	});
