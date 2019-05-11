@@ -35,6 +35,16 @@ angular
 					}
 				}
 			})
+			.state('login', {
+				url: '/login',
+				templateUrl: 'views/login.html',
+				controller: 'LoginController as login'
+			})
+			.state('signup', {
+				url: '/signup',
+				templateUrl: 'views/signup.html',
+				controller: 'SignupController as signup'
+			})
 		
 		$urlRouterProvider.otherwise('/top');
 	});
