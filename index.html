@@ -12,23 +12,26 @@
 	<div ng-app="app" class="app">
 		<header class="header">
 			<div class="header__fixed">
+				<div id="header">
+					<h1> My Hacker News Feed</h1>
+				</div>
 				<ul>
 					<li>
-						<a ui-sref="top" ui-sref-active="active">Top Stories</a>
-					</li>
-					<li>
-						<a ui-sref="saved" ui-sref-active="active">Saved Stories</a>
+						<a ui-sref="login" ui-sref-active="active">Log In</a>
 					</li>
 					<li>
 						<a ui-sref="signup" ui-sref-active="active">Sign up</a>
 					</li>
 					<li>
-						<a ui-sref="login" ui-sref-active="active">Log In</a>
+						<a ui-sref="saved" ui-sref-active="active">Saved Stories</a>
+					</li>
+					<li>
+						<a ui-sref="top" ui-sref-active="active">Top Stories</a>
 					</li>
 				</ul>
 			</div>
 		</header>
-		<div ui-view></div>
+		<div class="content" ui-view></div>
 	</div>
 
 	<script src="js/angular.js"></script>

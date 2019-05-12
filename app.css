@@ -1,36 +1,58 @@
 html, body {
     background: #fff;
     font-family: "Helvetica Neue", Verdana, sans-serif;
+    padding-left: 1vw;
 }
 .item__title {
     display: block;
 }
 .header {
     height: 47px;
+    padding: 1;
 }
+#header {
+    padding-left: 5vw;
+    animation: blink 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0% {
+        color: white;
+    }
+    50% {
+        color: black;
+    }
+    100% {
+      color: white;
+    }
+}
+
 .header__fixed {
-    background: #3661A2;
+    background: rgb(247, 110, 85);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     position: fixed;
-    height: inherit;
+    height: 20;
     top: 0;
     left: 0;
     right: 0;
 }
 .header ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0;    
+}
+.content {
+    margin-top: 80px;
 }
 .header a {
     display: block;
     padding: 14px 15px;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
-    float: left;
+    color: white;
+    float: right;
 }
 .header a.active {
-    background: #2C538C;
+    background: rgb(241, 83, 56);
     font-weight: 700;
     color: #fff;
 }
