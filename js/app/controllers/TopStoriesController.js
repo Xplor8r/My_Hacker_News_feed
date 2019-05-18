@@ -3,18 +3,18 @@ function TopStoriesController(posts) {
 
 	ctrl.page = 0;
 	ctrl.totalPosts = posts.data.length;
-	ctrl.totalPages = Math.ceil(ctrl.totalPosts / 30);
+	ctrl.totalPages = Math.ceil(ctrl.totalPosts / 25);
 
-	ctrl.paginatePosts = function () {
-		ctrl.posts = posts.data.slice(ctrl.page * 30, (ctrl.page + 1) * 30);
+	ctrl.paginatePosts =  () => {
+		ctrl.posts = posts.data.slice(ctrl.page * 25, (ctrl.page + 1) * 25);
 	};
 
-	ctrl.nextPage = function () {
+	ctrl.nextPage = () => {
 		ctrl.page++;
 		ctrl.paginatePosts()
 	};
 
-	ctrl.previousPage = function () {
+	ctrl.previousPage = () => {
 		ctrl.page--;
 		ctrl.paginatePosts();
 	};

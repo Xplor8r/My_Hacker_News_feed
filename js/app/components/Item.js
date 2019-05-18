@@ -5,12 +5,9 @@ let Item = {
 	},
 	controller: function (PostsService) {
 		let ctrl = this;
-
-		console.log('hey');
-
 		PostsService
 			.getPost(this.id)
-			.then(function (res) {
+			.then((res) => {
 				ctrl.data = res.data;
 			})
 	},
