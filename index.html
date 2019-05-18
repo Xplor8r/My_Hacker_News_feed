@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Angular Application</title>
+
+    <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+	<div ng-app="app" class="app">
+		<header class="header">
+			<div class="header__fixed">
+				<div id="header">
+					<h1> My Hacker News Feed</h1>
+				</div>
+			</div>
+		</header>
+		<div class="content" ui-view></div>
+	</div>
+
+	<script src="js/angular.js"></script>
+	<script src="js/angular-ui-router.js"></script>
+	<script src="js/angular-sanitize.js"></script>
+	<script src="js/app/app.js"></script>
+	<script src="js/app/components/Item.js"></script>
+	<script src="js/app/controllers/PostController.js"></script>
+	<script src="js/app/controllers/TopStoriesController.js"></script>
+	<script src="js/app/controllers/SavedStoriesController.js"></script>
+	<script src="js/app/controllers/LoginController.js"></script>
+	<script src="js/app/controllers/SignupController.js"></script>
+	<script src="js/app/services/PostsService.js"></script>
+
+</body>
+</html>
