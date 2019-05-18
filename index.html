@@ -12,9 +12,13 @@
 	<div ng-app="app" class="app">
 		<header class="header">
 			<div class="header__fixed">
-				<div id="header">
-					<h1> My Hacker News Feed</h1>
-				</div>
+					<h1 id="header"> My Hacker News Feed</h1>
+				<ul>
+
+					<li>
+							<a ui-sref="top" ui-sref-active="active">Home</a>
+					</li>
+				</ul>
 			</div>
 		</header>
 		<div class="content" ui-view></div>

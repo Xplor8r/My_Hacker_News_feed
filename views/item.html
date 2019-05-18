@@ -19,8 +19,9 @@
 			<a class="item__title" href="{{ item.data.url }}" target="_blank">
 				{{ item.data.title }}
 			</a>
+			<p>	{{ item.data.score }} points by <a href="https://news.ycombinator.com/user?id={{ item.data.by }}">{{ item.data.by }}</a></p>
 			<a class="item__description" ui-sref="post({id: item.data.id})">
-				{{ item.data.descendants }} comments {{ item.data.score }} points
+				{{ item.data.descendants }} comments 
 			</a>
 		</div>
 	</div>

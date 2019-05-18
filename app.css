@@ -1,7 +1,8 @@
 html, body {
     background: #fff;
     font-family: "Helvetica Neue", Verdana, sans-serif;
-    padding-left: 1vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 .item__title {
     display: block;
