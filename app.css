@@ -1,8 +1,8 @@
 html, body {
     background: #fff;
     font-family: "Helvetica Neue", Verdana, sans-serif;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 .item__title {
     display: block;
@@ -11,6 +11,9 @@ html, body {
 .header h1 {
     animation: blink 5s;
     animation-iteration-count: infinite;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 @keyframes blink {
@@ -26,7 +29,7 @@ html, body {
 }
 
 .header__fixed {
-    background: rgb(247, 110, 85);
+    background: rgb(236, 92, 66);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     position: fixed;
     height: 20;
@@ -75,23 +78,24 @@ html, body {
 	list-style: none;
 	margin: 10px 10px;
 	padding: 0;
-	overflow: hidden;
+    overflow: hidden;
 }
 .pagination li {
-	float: left;
+    float: left;
 }
 
 .pagination a {
 	display: block;
-	background: rgba(0, 0, 0, 0.1);
+	background:  rgb(236, 92, 66);
 	text-transform: uppercase;
 	font-size: 14px;
 	padding: 10px 15px;
 	text-decoration: none;
 	border-radius: 3px;
-	color: #262626;
+	color: #000000;
 	font-weight: 500;
-	margin-right: 10px;
+    margin-right: 10px;
+
 }
 
 
