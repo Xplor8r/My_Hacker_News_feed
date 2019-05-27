@@ -22,9 +22,5 @@
     "angular": "1.5.0",
     "angular-sanitize": "1.5.0",
     "express": "^4.13.4"
-  },
-  "engines": {
-    "node": "8.16.0",
-    "npm": "6.9.0"
   }
 }
