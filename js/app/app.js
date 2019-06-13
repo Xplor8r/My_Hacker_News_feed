@@ -2,11 +2,14 @@ angular
     .module('app', [
 	    'ui.router',
 	    'ngSanitize'
-    ])
+	])
+	.config(["$locationProvider", function($locationProvider) {
+		$locationProvider.html5Mode(true);
+	}])
 	.config(($stateProvider, $urlRouterProvider) => {
 		$stateProvider
 			.state('top', {
-				url: '/top',
+				url: '/',
 				templateUrl: 'views/top-stories.html',
 				controller: 'TopStoriesController as top',
 				resolve: {
@@ -26,5 +29,5 @@ angular
 				}
 			})
 		
-		$urlRouterProvider.otherwise('/top');
+		$urlRouterProvider.otherwise('/');
 	});
