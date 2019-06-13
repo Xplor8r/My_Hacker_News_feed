@@ -2,9 +2,9 @@
 	<a class="post__title" href="{{ post.data.url }}" target="_blank">
 		{{ post.data.title }}
 	</a>
-	<a class="post__description">
+	<p class="post__description">
 		{{ post.data.descendants }} comments {{ post.data.score }} points
-	</a>
+	</p>
 
 	<ul class="comments">
 		<li ng-repeat="comment in post.data.kids">

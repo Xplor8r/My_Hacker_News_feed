@@ -5,7 +5,7 @@
 
 # Install Directions
 
-To see the application in browser, fork and clone. Run npm install, run npm start and then navigate to localhost:3000/ to run the app in the browser.
+To see the application in browser, fork and clone. Run npm install, run npm start and then navigate to localhost:3001/ to run the app in the browser.
 
 # Contributions
 
