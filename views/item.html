@@ -2,10 +2,9 @@
 	<div ng-switch="item.data.type">
 		<div ng-switch-when="comment">
 			<div class="item__author">
-				<a ui-sref="user({id: item.data.by })">
-					{{ item.data.by }}
-				</a>
-				{{ (item.data.time * 1000) | date: 'short'}}
+				<p ui-sref="user({id: item.data.by })">
+					<strong>{{ item.data.by }} - {{ (item.data.time * 1000) | date: 'short'}}</strong>
+				</p>
 			</div>
 			<div ng-bind-html="item.data.text"></div>
 
