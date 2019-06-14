@@ -3,6 +3,9 @@
 + Gathered data via calls made to [Hacker News API](https://hacker-news.firebaseio.com/v0/topstories.json)
 + Styled content with CSS
 
+# Video Demo
+[![My Hacker News Feed AngularJS](https://img.youtube.com/vi/ICLmoMRyHZE/hqdefault.jpg)](https://youtu.be/ICLmoMRyHZE)
+
 # Install Directions
 
 To see the application in browser, fork and clone. Run npm install, run npm start and then navigate to localhost:3001/ to run the app in the browser.
